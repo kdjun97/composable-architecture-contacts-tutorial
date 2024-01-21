@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct ContactNavigationTutorialApp: App {
+    static let store = Store(initialState: ContactsFeature.State()) {
+        ContactsFeature()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContactsView(store: ContactNavigationTutorialApp.store)
         }
     }
 }

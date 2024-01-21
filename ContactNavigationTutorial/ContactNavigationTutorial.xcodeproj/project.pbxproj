@@ -14,6 +14,12 @@
 		B7D5DB372B5D06C200C7357E /* ContactNavigationTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB362B5D06C200C7357E /* ContactNavigationTutorialTests.swift */; };
 		B7D5DB412B5D06C200C7357E /* ContactNavigationTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB402B5D06C200C7357E /* ContactNavigationTutorialUITests.swift */; };
 		B7D5DB432B5D06C200C7357E /* ContactNavigationTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB422B5D06C200C7357E /* ContactNavigationTutorialUITestsLaunchTests.swift */; };
+		B7D5DB552B5D0CAA00C7357E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B7D5DB542B5D0CAA00C7357E /* ComposableArchitecture */; };
+		B7D5DB572B5D0CBF00C7357E /* ContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB562B5D0CBF00C7357E /* ContactsFeature.swift */; };
+		B7D5DB5A2B5D0D8300C7357E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB592B5D0D8300C7357E /* Contact.swift */; };
+		B7D5DB5C2B5D0E9500C7357E /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB5B2B5D0E9500C7357E /* ContactsView.swift */; };
+		B7D5DB5F2B5D120A00C7357E /* AddContactsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB5E2B5D120A00C7357E /* AddContactsFeature.swift */; };
+		B7D5DB612B5D136D00C7357E /* AddContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5DB602B5D136D00C7357E /* AddContactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,11 @@
 		B7D5DB3C2B5D06C200C7357E /* ContactNavigationTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactNavigationTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D5DB402B5D06C200C7357E /* ContactNavigationTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNavigationTutorialUITests.swift; sourceTree = "<group>"; };
 		B7D5DB422B5D06C200C7357E /* ContactNavigationTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNavigationTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7D5DB562B5D0CBF00C7357E /* ContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFeature.swift; sourceTree = "<group>"; };
+		B7D5DB592B5D0D8300C7357E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		B7D5DB5B2B5D0E9500C7357E /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		B7D5DB5E2B5D120A00C7357E /* AddContactsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsFeature.swift; sourceTree = "<group>"; };
+		B7D5DB602B5D136D00C7357E /* AddContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D5DB552B5D0CAA00C7357E /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +106,8 @@
 		B7D5DB242B5D06C100C7357E /* ContactNavigationTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				B7D5DB252B5D06C100C7357E /* ContactNavigationTutorialApp.swift */,
+				B7D5DB522B5D0C7C00C7357E /* Feature */,
+				B7D5DB512B5D0C7600C7357E /* App */,
 				B7D5DB272B5D06C100C7357E /* ContentView.swift */,
 				B7D5DB292B5D06C200C7357E /* Assets.xcassets */,
 				B7D5DB2B2B5D06C200C7357E /* Preview Content */,
@@ -127,6 +140,42 @@
 			path = ContactNavigationTutorialUITests;
 			sourceTree = "<group>";
 		};
+		B7D5DB512B5D0C7600C7357E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B7D5DB252B5D06C100C7357E /* ContactNavigationTutorialApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B7D5DB522B5D0C7C00C7357E /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				B7D5DB5D2B5D11F800C7357E /* Detail */,
+				B7D5DB582B5D0D7D00C7357E /* Model */,
+				B7D5DB562B5D0CBF00C7357E /* ContactsFeature.swift */,
+				B7D5DB5B2B5D0E9500C7357E /* ContactsView.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		B7D5DB582B5D0D7D00C7357E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7D5DB592B5D0D8300C7357E /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7D5DB5D2B5D11F800C7357E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				B7D5DB5E2B5D120A00C7357E /* AddContactsFeature.swift */,
+				B7D5DB602B5D136D00C7357E /* AddContactsView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +192,9 @@
 			dependencies = (
 			);
 			name = ContactNavigationTutorial;
+			packageProductDependencies = (
+				B7D5DB542B5D0CAA00C7357E /* ComposableArchitecture */,
+			);
 			productName = ContactNavigationTutorial;
 			productReference = B7D5DB222B5D06C100C7357E /* ContactNavigationTutorial.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +267,9 @@
 				Base,
 			);
 			mainGroup = B7D5DB192B5D06C100C7357E;
+			packageReferences = (
+				B7D5DB532B5D0CAA00C7357E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = B7D5DB232B5D06C100C7357E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D5DB5A2B5D0D8300C7357E /* Contact.swift in Sources */,
 				B7D5DB282B5D06C100C7357E /* ContentView.swift in Sources */,
+				B7D5DB612B5D136D00C7357E /* AddContactsView.swift in Sources */,
 				B7D5DB262B5D06C100C7357E /* ContactNavigationTutorialApp.swift in Sources */,
+				B7D5DB5C2B5D0E9500C7357E /* ContactsView.swift in Sources */,
+				B7D5DB572B5D0CBF00C7357E /* ContactsFeature.swift in Sources */,
+				B7D5DB5F2B5D120A00C7357E /* AddContactsFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -430,6 +490,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +520,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +650,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B7D5DB532B5D0CAA00C7357E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B7D5DB542B5D0CAA00C7357E /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7D5DB532B5D0CAA00C7357E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7D5DB1A2B5D06C100C7357E /* Project object */;
 }
